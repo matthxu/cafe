@@ -1,7 +1,7 @@
 :root {
     --primary: #f5ebe0;
     --accent: #564a3b;
-    --gridlines: black;
+    --gridlines: darkgrey;
 }
 @font-face {
     font-family: "Univers";
@@ -60,7 +60,7 @@ nav a {
 main {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    box-shadow: 0 0 0 1px var(--gridlines);
+    /* box-shadow: 0 0 0 1px darkgrey; */
 }
 /* > selects only direct children, excludes descendants */
 main > * {
