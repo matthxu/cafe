@@ -1,7 +1,7 @@
 :root {
     --primary: #f5ebe0;
     --accent: #564a3b;
-    --gridlines: darkgrey;
+    --gridlines: #a9a9a9;
     --formal: "Hedvig Letters Serif", serif;
     --informal: "Univers", sans-serif;
 }
@@ -33,6 +33,9 @@ h3 {
 }
 p {
     line-height: 1.5rem;
+}
+a {
+    font-weight: bold;
 }
 /* ------------------------------header------------------------------- */
 body > * {
@@ -189,9 +192,33 @@ img:hover {
 }
 
 /* ------------------------------/////------------------------------- */
-.graphic-banner {
-    grid-column: 2/5;
+@keyframes slide {
+    from {
+        tranform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
+.graphic-banner {
+    /* grid-column: 2/5; */
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 5s slide infinite linear;
+}
+/* .icons-slider {
+    height: 100%;
+    width: 100%;
+} */
+.graphic-banner img {
+    height: 50%;
+    object-fit: contain;
+    /* padding: 0 0.5em; */
+    margin: 1em;
+}
+
+/* ------------------------------/////------------------------------- */
 
 #contact-page * {
     background: var(--accent);

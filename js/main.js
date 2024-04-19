@@ -14,5 +14,5 @@ document.documentElement.style.setProperty(
 // Dynamically changes element size to fit within screen
 let totalHeight =
     1080 - deliveryPageHeight - locationPageHeight - navigationHeight - 120;
-// 100px roughly accounting for user taskbar + browser head
+// 120px roughly accounting for user taskbar + browser head
 animationHeight.style.height = totalHeight + "px";
