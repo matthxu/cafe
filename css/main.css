@@ -102,10 +102,10 @@ main > * {
 
 #hero .main-imgs {
     grid-column: 2/4;
-}
-.main-imgs {
     height: 75svh;
+    user-select: none;
 }
+
 img {
     height: 100%;
     width: 100%;
