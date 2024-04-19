@@ -17,6 +17,10 @@
     background-color: var(--primary);
     font-size: 1rem;
     font-family: var(--informal);
+    text-decoration: none;
+    scroll-behavior: smooth;
+    /* creates offset so navbar doesn't cover content */
+    scroll-padding-top: var(--scroll-padding, 42px);
 }
 h1,
 h2,
@@ -63,7 +67,6 @@ header nav {
     align-items: center;
 }
 nav a {
-    text-decoration: none;
     color: var(--accent);
     font-family: var(--formal);
 }
