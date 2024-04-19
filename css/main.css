@@ -19,8 +19,8 @@
     font-family: var(--informal);
     text-decoration: none;
     scroll-behavior: smooth;
-    /* creates offset so navbar doesn't cover content */
-    scroll-padding-top: var(--scroll-padding, 42px);
+    /* creates offset so navbar doesn't cover content; 73px is fallback for non-js users */
+    scroll-padding-top: var(--scroll-padding);
 }
 h1,
 h2,
