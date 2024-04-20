@@ -34,9 +34,7 @@ h3 {
 p {
     line-height: 1.5rem;
 }
-a {
-    font-weight: bold;
-}
+
 /* ------------------------------header------------------------------- */
 body > * {
     box-shadow: 0 0 0 1px var(--gridlines);
@@ -101,6 +99,21 @@ main > * {
     font-size: 3rem;
     padding: 0.5em 0;
     font-family: var(--formal);
+}
+
+.hero-text #hello-btn {
+    color: var(--primary);
+    background-color: var(--accent);
+    font-size: 1.5rem;
+    align-self: last baseline;
+    padding: 1em 1.25em;
+    margin: 3em 0.5em 0 0;
+    transition-duration: 0.3s;
+    border-radius: 4px;
+}
+
+#hello-btn:hover {
+    opacity: 0.6;
 }
 
 #hero-img {
