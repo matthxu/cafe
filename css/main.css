@@ -63,15 +63,27 @@ header .logo {
 
 header nav {
     grid-column: 3/4;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 nav a {
-    color: var(--accent);
+    display: grid;
+    place-items: center;
+    transition-duration: 300ms;
+}
+nav a {
     font-family: var(--formal);
 }
-
+nav p {
+    transition-duration: 300ms;
+}
+nav a:hover {
+    background-color: var(--accent);
+}
+nav a:hover p {
+    background-color: var(--accent);
+    color: var(--primary);
+}
 /* ------------------------------gridlines------------------------------- */
 main {
     display: grid;
@@ -101,7 +113,7 @@ main > * {
     font-family: var(--formal);
 }
 
-.hero-text #hello-btn {
+.hero-text .hero-btn {
     color: var(--primary);
     background-color: var(--accent);
     font-size: 1.5rem;
@@ -112,7 +124,7 @@ main > * {
     border-radius: 4px;
 }
 
-#hello-btn:hover {
+.hero-btn:hover {
     opacity: 0.6;
 }
 
