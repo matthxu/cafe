@@ -120,6 +120,7 @@ main > * {
 .hero-btn {
     font-family: var(--formal);
     color: var(--accent);
+    border-bottom: dashed 1px var(--accent);
     font-size: 1.4rem;
     font-weight: 600;
     align-self: last baseline;
@@ -233,13 +234,63 @@ img:hover {
     padding: 0 3%;
 }
 #menu-link {
-    /* font-size: 1.25rem; */
+    font-size: 1.1rem;
 }
 
 /* ------------------------------/////------------------------------- */
 
 #products-page {
     height: 80svh;
+    display: grid;
+    grid-template-rows: 1fr 9fr 1fr;
+}
+.empty-space {
+    grid-column: 1/4;
+    box-shadow: 0 0 0 1px var(--gridlines);
+    z-index: 1;
+    padding: 1% 0;
+}
+.empty-space h3 {
+    text-align: center;
+}
+.products-content {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.products-content img:hover {
+    opacity: 0.6;
+}
+.products-left {
+    grid-column: 1/2;
+}
+.products-right {
+    grid-column: 3/4;
+}
+.products-center {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+}
+.products-center > * {
+    padding: 2em 2.5em;
+    box-shadow: 0 0 0 1px var(--gridlines);
+}
+.italics {
+    font-style: italic;
+}
+#product-logo {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Trebuchet MS", sans-serif;
+    opacity: 0.7;
+}
+#logo-header {
+    line-height: 30px;
+    font-size: 2rem;
+}
+#logo-subheader {
+    font-size: 0.75rem;
 }
 
 /* ------------------------------/////------------------------------- */
