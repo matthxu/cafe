@@ -186,7 +186,6 @@ main > * {
 #hero-img {
     grid-column: 2/4;
     height: 75svh;
-    user-select: none;
 }
 
 img {
@@ -195,6 +194,7 @@ img {
     object-fit: cover;
     opacity: 0.6;
     transition: 0.4s;
+    user-select: none;
     /* !! */
     overflow: hidden;
 }
@@ -240,9 +240,9 @@ img:hover {
 /* ------------------------------/////------------------------------- */
 
 #products-page {
-    height: 80svh;
+    height: 85svh;
     display: grid;
-    grid-template-rows: 1fr 9fr 1fr;
+    grid-template-rows: 3fr 5fr 2fr;
 }
 .empty-space {
     grid-column: 1/4;
@@ -251,6 +251,7 @@ img:hover {
     padding: 1% 0;
 }
 .empty-space h3 {
+    margin-top: 2%;
     text-align: center;
 }
 .products-content {
@@ -284,6 +285,7 @@ img:hover {
     font-weight: bold;
     font-family: "Trebuchet MS", sans-serif;
     opacity: 0.7;
+    user-select: none;
 }
 #logo-header {
     line-height: 30px;
@@ -350,12 +352,39 @@ img:hover {
 }
 
 /* ------------------------------/////------------------------------- */
+#contact-page {
+    grid-template-columns: 1fr 2fr;
+}
+#contact-page > * {
+    box-shadow: 0 0 0 1px var(--gridlines);
+}
+.side-panel {
+    /* grid-column: 1/2; */
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 3em 2em;
+}
+.contact-form > * {
+    padding: 1rem;
+    border: none;
+    border-bottom: dotted 1px var(--gridlines);
+}
+.contact-form label {
+    font-size: 1.25rem;
+    color: var(--accent);
+}
+.contact-form input {
+    resize: none;
+}
+/* ------------------------------/////------------------------------- */
 
-#contact-page * {
+.footer * {
     background: var(--accent);
     color: white;
 }
-#contact-page {
+.footer {
     background: var(--accent);
-    height: 92svh;
+    height: 20svh;
 }
