@@ -363,12 +363,42 @@ img:hover {
     box-shadow: 0 0 0 1px var(--gridlines);
 }
 .side-panel {
-    /* grid-column: 1/2; */
+    display: grid;
+    grid-template-columns: repeat(4, fit-content(25%));
+    grid-template-rows: repeat(7, 1fr);
 }
+.side-panel > * {
+    box-shadow: 0 0 0 1px var(--gridlines);
+}
+.side-panel h3 {
+    font-size: 3rem;
+    opacity: 0.6;
+    font-family: var(--informal);
+    font-weight: normal;
+    align-self: center;
+    pointer-events: none;
+    /* box-shadow: none; */
+    box-shadow: 1px 0 0 0 var(--gridlines), -60px 0 0 0 var(--gridlines);
+}
+.questions {
+    grid-column: 1/5;
+    text-align: center;
+}
+.feedback {
+    grid-column: 1/5;
+    text-align: center;
+}
+.icon-container {
+    opacity: 0.3;
+}
+.icon-small {
+    padding: 15%;
+    object-fit: scale-down;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
-    /* align-items: start; */
     padding: 3em 2em;
 }
 .contact-form > * {
@@ -400,8 +430,6 @@ input:focus {
     font-size: 1.25rem;
     margin: 2em 0 0 0;
     align-self: flex-start;
-    /* background-color: var(--accent); */
-    /* color: var(--primary); */
     border: 1px dotted var(--accent);
     border-radius: 3px;
     padding: 1em 3em;
