@@ -120,7 +120,7 @@ main > * {
 .hero-btn {
     font-family: var(--formal);
     color: var(--accent);
-    border-bottom: dashed 1px var(--accent);
+    /* border-bottom: dashed 1px var(--accent); */
     font-size: 1.4rem;
     font-weight: 600;
     align-self: last baseline;
@@ -445,9 +445,22 @@ input:focus {
 
 .footer * {
     background: var(--accent);
-    color: white;
+    color: var(--primary);
 }
 .footer {
+    height: 10svh;
     background: var(--accent);
-    height: 20svh;
+}
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    padding-top: 1.25rem;
+}
+.footer-content .logo {
+    grid-column: 2/3;
+    pointer-events: none;
+}
+.footer-content h2 {
+    font-size: 1.5rem;
 }
