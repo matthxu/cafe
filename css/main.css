@@ -441,6 +441,9 @@ input:focus {
     background-color: #e9dbcc;
     border: solid 1px var(--accent);
 }
+#contact-page .empty-space {
+    height: 9svh;
+}
 /* ------------------------------/////------------------------------- */
 
 .footer * {
