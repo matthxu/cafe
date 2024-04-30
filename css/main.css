@@ -235,6 +235,8 @@ img:hover {
 }
 #menu-link {
     font-size: 1.1rem;
+    color: var(--accent);
+    text-decoration: solid underline 3px var(--accent);
 }
 
 /* ------------------------------/////------------------------------- */
@@ -258,6 +260,7 @@ img:hover {
     grid-column: 1/4;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    text-align: center;
 }
 .products-content img:hover {
     opacity: 0.6;
@@ -322,7 +325,13 @@ img:hover {
 #map {
     grid-column: 1/2;
 }
-
+#map:hover iframe {
+    opacity: 1;
+}
+iframe {
+    opacity: 0.5;
+    transition-duration: 600ms;
+}
 /* ------------------------------/////------------------------------- */
 #delivery-page {
     height: 20svh;
@@ -453,14 +462,14 @@ input:focus {
     color: var(--primary);
 }
 .footer {
-    height: 10svh;
+    height: 25svh;
     background: var(--accent);
 }
 .footer-content {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
-    padding-top: 1.25rem;
+    padding-top: 5em;
 }
 .footer-content .logo {
     grid-column: 2/3;
@@ -468,4 +477,19 @@ input:focus {
 }
 .footer-content h2 {
     font-size: 1.5rem;
+}
+
+/* ------------------------------/////------------------------------- */
+
+@media (width < 600px) {
+    * {
+        background: red;
+    }
+}
+/* ------------------------------/////------------------------------- */
+
+@media (width >= 600px) and (width < 768px) {
+    * {
+        background: greenyellow;
+    }
 }
