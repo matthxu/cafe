@@ -334,25 +334,27 @@ img:hover {
         tranform: translateX(0);
     }
     to {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 .graphic-banner {
-    /* grid-column: 2/5; */
     display: flex;
-    white-space: nowrap;
     overflow: hidden;
-    animation: 5s slide infinite linear;
+    white-space: nowrap;
+    position: relative;
+    pointer-events: none;
 }
-/* .icons-slider {
+.icons-slider {
     height: 100%;
     width: 100%;
-} */
+    display: inline-block;
+    animation: 10s slide infinite linear;
+}
 .graphic-banner img {
-    height: 50%;
+    width: 3.5em;
     object-fit: contain;
-    /* padding: 0 0.5em; */
-    margin: 1em;
+    padding: 0 0.5em;
+    opacity: 0.3;
 }
 
 /* ------------------------------/////------------------------------- */
