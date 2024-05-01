@@ -12,19 +12,19 @@ The demo and screenshots of the website can be accessed directly below.
 
 <!-- to be added.. -->
 
-![Website GIF](/cafe/assets/screenshots/cafe_gif.gif)
+![Website GIF](./assets/screenshots/cafe_gif.gif)
 
 ---
 
 ### Screenshots
 
-![Website Screenshot 1](/cafe/assets/screenshots/1.png)
-![Website Screenshot 2](/cafe/assets/screenshots/2.png)
-![Website Screenshot 3](/cafe/assets/screenshots/3.png)
-![Website Screenshot 4](/cafe/assets/screenshots/4.png)
-![Website Screenshot 5](/cafe/assets/screenshots/5.png)
-![Website Screenshot 6](/cafe/assets/screenshots/6.png)
-![Website Screenshot 7](/cafe/assets/screenshots/7.png)
+![Website Screenshot 1](./assets/screenshots/1.png)
+![Website Screenshot 2](./assets/screenshots/2.png)
+![Website Screenshot 3](./assets/screenshots/3.png)
+![Website Screenshot 4](./assets/screenshots/4.png)
+![Website Screenshot 5](./assets/screenshots/5.png)
+![Website Screenshot 6](./assets/screenshots/6.png)
+![Website Screenshot 7](./assets/screenshots/7.png)
 
 ### Fonts
 
