@@ -480,32 +480,30 @@ input:focus {
 
 /* ------------------------------/////------------------------------- */
 
-@media (width < 600px) {
+@media (width < 678px) {
     * {
-        background: red;
+        background: burlywood;
     }
 }
 /* ------------------------------/////------------------------------- */
 
-@media (width >= 600px) and (width < 968px) {
+@media (width >= 678px) and (width < 968px) {
     * {
-        background: greenyellow;
+        background: lemonchiffon;
     }
     main {
         grid-template-columns: 1fr 6fr 1fr;
     }
-    /* > selects only direct children, excludes descendants */
     main > * {
         grid-column: 2/3;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+    }
+    header {
+        grid-template-columns: 1fr 2fr 4fr 1fr;
+        height: 9svh;
     }
 }
 
-@media (width >= 968px) and (width < 1600px) {
-    * {
-        background: lemonchiffon;
-    }
+@media (width>=678px) and (width < 1600px) {
     h1 {
         font-size: 2rem;
     }
