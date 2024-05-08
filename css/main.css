@@ -58,7 +58,6 @@ header .logo {
     grid-column: 2/3;
 }
 .logo h2 {
-    /* font-family: "Nothing You Could Do", cursive; */
     font-weight: 400;
     margin: 0.5em 0 0 10%;
 }
@@ -91,7 +90,6 @@ nav a:hover p {
 main {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    /* box-shadow: 0 0 0 1px darkgrey; */
 }
 /* > selects only direct children, excludes descendants */
 main > * {
@@ -122,7 +120,6 @@ h1 {
 .hero-btn {
     font-family: var(--formal);
     color: var(--accent);
-    /* border-bottom: dashed 1px var(--accent); */
     font-size: 1.4rem;
     font-weight: 600;
     align-self: last baseline;
@@ -197,8 +194,6 @@ img {
     opacity: 0.6;
     transition: 0.4s;
     user-select: none;
-    /* !! */
-    overflow: hidden;
 }
 img:hover {
     opacity: 1;
@@ -241,7 +236,6 @@ img:hover {
 /* ------------------------------/////------------------------------- */
 
 #products-page {
-    /* height: 85svh; */
     display: grid;
     grid-template-rows: 0.5fr 3fr 0.5fr;
 }
@@ -390,7 +384,6 @@ iframe {
     font-weight: normal;
     align-self: center;
     pointer-events: none;
-    /* box-shadow: none; */
     box-shadow: 1px 0 0 0 var(--gridlines), -60px 0 0 0 var(--gridlines);
 }
 .questions {
@@ -481,16 +474,10 @@ input:focus {
 /* ------------------------------/////------------------------------- */
 
 @media (width < 678px) {
-    * {
-        background: burlywood;
-    }
 }
 /* ------------------------------/////------------------------------- */
 
 @media (width >= 678px) and (width < 968px) {
-    * {
-        background: lemonchiffon;
-    }
     main {
         grid-template-columns: 1fr 6fr 1fr;
     }

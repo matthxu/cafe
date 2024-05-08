@@ -41,14 +41,6 @@ The demo and screenshots of the website can be accessed directly below.
 | Secondary  | ![#a9a9a9](https://via.placeholder.com/10/a9a9a9?text=+) #a9a9a9 |
 | Accent     | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
 
-## Version History
-
--   0.2
-    -   Various bug fixes and optimizations
-    -   See [commit changes](https://github.com/matthxu/cafe/commits/main/)
--   0.1
-    -   Initial Release
-
 ### Roadmap
 
 -   Code clean up & optimisation
