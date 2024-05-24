@@ -490,6 +490,28 @@ input:focus {
     h3 {
         font-size: 1.5rem;
     }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    #contact-page {
+        grid-template-columns: 1fr;
+    }
+    .side-panel {
+        display: none;
+        display: hidden;
+    }
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2em;
+    }
+    .footer-content p {
+        font-size: 0.75rem;
+    }
+    .footer-h2 {
+        font-size: 1rem;
+    }
 }
 /* ------------------------------/////------------------------------- */
 
