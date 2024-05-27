@@ -91,24 +91,31 @@ header .main-nav {
     background-color: var(--accent);
     height: 100vh;
     width: 100%;
-    max-width: 450px;
+    max-width: 20vw;
     position: fixed;
     top: 0;
     right: -450px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 3rem;
-    transition: 0.3 ease;
+    text-align: left;
+    transition: 0.4s ease-in;
 }
 .off-screen-menu.active {
     right: 0;
 }
+.off-screen-menu p {
+    background-color: var(--accent);
+    color: var(--primary);
+    font-size: 3rem;
+    font-family: var(--formal);
+    padding: 1em;
+}
+.off-screen-menu p:hover {
+    opacity: 0.9;
+}
 .ham-menu {
-    padding: 1rem;
-    /* display: flex; */
+    padding: 0.8rem;
+    display: flex;
 }
 .sub-ham-menu {
     height: 50px;
@@ -557,6 +564,10 @@ input:focus {
         display: flex;
         flex-direction: column;
     }
+    .off-screen-menu {
+        max-width: 450px;
+    }
+
     #hero {
         display: flex;
         flex-direction: column-reverse;
@@ -610,6 +621,9 @@ input:focus {
     }
     .center-text {
         margin-top: 2em;
+    }
+    .off-screen-menu {
+        max-width: 450px;
     }
     .hero-btn {
         color: var(--primary);
