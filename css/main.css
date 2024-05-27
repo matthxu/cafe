@@ -62,30 +62,94 @@ header .logo {
     margin: 0.5em 0 0 10%;
 }
 
-header nav {
+header .main-nav {
     grid-column: 3/4;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-nav a {
+.main-nav a {
     display: grid;
     place-items: center;
     transition-duration: 300ms;
 }
-nav a {
+.main-nav a {
     font-family: var(--formal);
 }
-nav p {
+.main-nav p {
     transition-duration: 300ms;
     color: var(--accent);
 }
-nav a:hover {
+.main-nav a:hover {
     background-color: var(--accent);
 }
-nav a:hover p {
+.main-nav a:hover p {
     background-color: var(--accent);
     color: var(--primary);
 }
+/* ------------------------------off-screen_menu------------------------------- */
+.off-screen-menu {
+    background-color: var(--accent);
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: 0.3 ease;
+}
+.off-screen-menu.active {
+    right: 0;
+}
+.ham-menu {
+    padding: 1rem;
+    /* display: flex; */
+}
+.sub-ham-menu {
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+}
+.sub-ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: var(--accent);
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+}
+.sub-ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.sub-ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.sub-ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, 50%) rotate(45deg);
+    background-color: var(--primary);
+}
+.sub-ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.sub-ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, 50%) rotate(-45deg);
+    background-color: var(--primary);
+}
+.sub-ham-menu.active {
+    background-color: var(--accent);
+}
+
 /* ------------------------------gridlines------------------------------- */
 main {
     display: grid;
@@ -479,7 +543,6 @@ input:focus {
 
 @media (width < 678px) {
     * {
-        background-color: grey;
     }
     h1 {
         font-size: 2rem;
@@ -493,6 +556,10 @@ input:focus {
     main {
         display: flex;
         flex-direction: column;
+    }
+    #hero {
+        display: flex;
+        flex-direction: column-reverse;
     }
     #contact-page {
         grid-template-columns: 1fr;
