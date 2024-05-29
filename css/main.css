@@ -61,7 +61,6 @@ header .logo {
     font-weight: 400;
     margin: 0.5em 0 0 10%;
 }
-
 header .main-nav {
     grid-column: 3/4;
     display: grid;
@@ -114,7 +113,7 @@ header .main-nav {
     opacity: 0.9;
 }
 .ham-menu {
-    padding: 0.8rem;
+    padding: 0.65rem;
     display: flex;
 }
 .sub-ham-menu {
@@ -563,6 +562,21 @@ input:focus {
     main {
         display: flex;
         flex-direction: column;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        height: 15svh;
+    }
+    header .main-nav {
+        display: none;
+    }
+    #navigation-bar .logo {
+        margin: 0 auto;
+        display: inline;
+    }
+    .logo h2 {
+        margin: 0;
     }
     .off-screen-menu {
         max-width: 450px;
