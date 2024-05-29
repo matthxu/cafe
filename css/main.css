@@ -121,6 +121,7 @@ header .main-nav {
     width: 50px;
     margin-left: auto;
     position: relative;
+    cursor: pointer;
 }
 .sub-ham-menu span {
     height: 5px;
@@ -549,6 +550,7 @@ input:focus {
 
 @media (width < 678px) {
     * {
+        margin: 5px;
     }
     h1 {
         font-size: 2rem;
@@ -563,6 +565,9 @@ input:focus {
         display: flex;
         flex-direction: column;
     }
+    header > * {
+        box-shadow: 0 0 0 0;
+    }
     header {
         display: flex;
         justify-content: space-between;
@@ -573,25 +578,44 @@ input:focus {
     }
     #navigation-bar .logo {
         margin: 0 auto;
-        display: inline;
     }
     .logo h2 {
-        margin: 0;
+        margin: 0 auto;
+        font-size: 3rem;
     }
     .off-screen-menu {
-        max-width: 450px;
+        max-width: 350px;
+        margin: 0;
+    }
+    .off-screen-p {
+        margin: 0;
     }
 
     #hero {
         display: flex;
         flex-direction: column-reverse;
     }
+    .hero-btn {
+        color: var(--primary);
+        background-color: var(--accent);
+        font-size: 1.25rem;
+        transition: none;
+    }
     #contact-page {
         grid-template-columns: 1fr;
     }
+    .info-section {
+        height: auto;
+    }
+    .info-section h3 {
+        margin: 2.75em auto 0 1em;
+    }
     .side-panel {
         display: none;
-        display: hidden;
+    }
+    .products-left,
+    .products-right {
+        display: none;
     }
     .footer-content {
         display: flex;
