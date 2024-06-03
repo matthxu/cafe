@@ -25,6 +25,16 @@ https://matthxu.github.io/cafe/
 ![Website Screenshot 5](./assets/screenshots/5.png)
 ![Website Screenshot 6](./assets/screenshots/6.png)
 ![Website Screenshot 7](./assets/screenshots/7.png)
+![Website Screenshot 8](./assets/screenshots/8.png)
+![Website Screenshot 9](./assets/screenshots/9.png)
+![Website Screenshot 10](./assets/screenshots/10.png)
+![Website Screenshot 11](./assets/screenshots/11.png)
+![Website Screenshot 12](./assets/screenshots/12.png)
+![Website Screenshot 13](./assets/screenshots/13.png)
+![Website Screenshot 14](./assets/screenshots/14.png)
+![Website Screenshot 15](./assets/screenshots/15.png)
+![Website Screenshot 16](./assets/screenshots/16.png)
+![Website Screenshot 17](./assets/screenshots/17.png)
 
 ### Fonts
 
