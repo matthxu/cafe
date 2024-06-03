@@ -10,7 +10,7 @@ The demo and screenshots of the website can be accessed directly below.
 
 ## Demo
 
-<!-- to be added.. -->
+https://matthxu.github.io/cafe/
 
 ![Website GIF](./assets/screenshots/cafe_gif.gif)
 
