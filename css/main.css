@@ -192,7 +192,7 @@ h1 {
     font-family: var(--formal);
     color: var(--primary);
     background-color: var(--accent);
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     align-self: last baseline;
     margin-bottom: 10%;
     padding: 1em 1.25em;
